@@ -1,0 +1,27 @@
+{
+  "name": "kaia-portal",
+  "version": "0.0.11",
+  "private": true,
+  "homepage": "https://portal.qa.kaia.io",
+  "type": "module",
+  "scripts": {
+    "build:cache": "synpress",
+    "build:cache:force": "synpress --force",
+    "build:cache:headless": "synpress --headless",
+    "serve:test-dapp": "serve node_modules/@metamask/test-dapp/dist -p 9999",
+    "test:cypress:headful": "cypress run --browser chrome --headed"
+  },
+  "dependencies": {
+    "@playwright/test": "1.48.2",
+    "@synthetixio/synpress": "4.0.10",
+    "dotenv": "16.4.2"
+  },
+  "devDependencies": {
+    "@metamask/test-dapp": "8.1.0",
+    "@synthetixio/synpress-tsconfig": "0.0.11",
+    "@types/node": "20.11.17",
+    "cypress": "13.15.1",
+    "serve": "14.2.1",
+    "typescript": "5.3.3"
+  }
+}
